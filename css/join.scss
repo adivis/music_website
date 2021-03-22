@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+body{
+    background-image: linear-gradient(#0F2027, #2C5364);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    // overflow: hidden;
+}
+.join-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    .right-section{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .big{
+        color: #FFE600;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 5rem;
+    }
+    .signup-form{
+        background-image: linear-gradient(#111116, #3E7089);
+        width: 50vw;
+        max-width: 50%;
+        padding: 2rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 5px 15px 19px rgba(83, 78, 129, 0.6);
+    }
+    .input{
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .input:last-child{
+        margin-bottom: 0;
+    }
+    .input label{
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .input input{
+        border:none;
+        background: none ;
+        border: 1px solid #030505;
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+    .input input:focus{
+        border-color: #596da0;
+    }
+}
+@media (max-width: 800px){
+    .join-section{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .signup-form{
+        width: 80vw;
+        max-width: inherit;
+        margin: 2rem 0 ;
+    }
+}
